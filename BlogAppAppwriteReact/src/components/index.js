@@ -5,6 +5,10 @@ import Container from "./Container/Container";
 import Button from "./Button";
 import Input from "./Input";
 import LogoutBtn from './Header/LogoutBtn'
+import Select from "./Select";
+import PostCard from "./PostCard";
+import Login from "./Login";
+import Signup from "./Signup";
 export {
     Header,
     Footer,
@@ -12,5 +16,9 @@ export {
     Container,
     Button,
     Input,
-    LogoutBtn
+    LogoutBtn,
+    Select,
+    PostCard,
+    Login,
+    Signup
 }
