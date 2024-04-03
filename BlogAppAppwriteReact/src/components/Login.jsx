@@ -71,7 +71,7 @@ function Login() {
                 placeholder="Enter your password"
                 type="password"
                 {
-                    ...register('passwors',{required:true})
+                    ...register('password',{required:true})
                 }
                 />
 

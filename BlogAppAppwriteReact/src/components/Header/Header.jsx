@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
-import  {Container, Logo ,LogoutBtn} from '../index';
+import  {Container, Logo ,LogoutBtn} from '../index.js';
 
 function Header() {
     const authStatus = useSelector((state)=>state.auth.status)
@@ -40,12 +40,12 @@ function Header() {
             <nav className='flex'>
                 <div className='mr-4'>
                  <Link to='/'>
-                <Logo width='70px'   />
+                <Logo width='70px'/>
                 </Link>
                 </div>
 
                 <ul className='flex ml-auto'>
-                    {navItems.map(item=>{
+                    {navItems.map(item=>
                         item.active ? (
                             <li key={item.name}>
                                 <button onClick={()=>{navigate(item.slug)}}
@@ -55,7 +55,7 @@ function Header() {
                                 </button>
                             </li>
                         ) : null
-                    })}
+                    )}
                      {
                     authStatus && (
                         <li>
